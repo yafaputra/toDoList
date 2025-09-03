@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>MY TO DO LIST</title>
+</head>
+<body>
+    <div class="todo-wrapper">
+
+        <h1>MY TO DO LIST</h1>
+        <p>Double-click an item to mark it compelete</p>
+        <form action="/add" method="POST">
+            <input type="text" name="item" placeholder="Add new item" id="toDoEntryBox" required>
+        </form>
+        <button type="submit" id="addButton" onclock="">Add</button>
+        <ol id="toDoList">
+        </ol>
+        <div class="control-wrapper">
+            <button id="clearButton" onclick="clearCompletedToDoItems()">Clear Completed</button>
+            <button id="emptyButton" onclick="emptyList()">Empty List</button>
+            <button id="saveButton" onclick="saveList()">Save All</button>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
